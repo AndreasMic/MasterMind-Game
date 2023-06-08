@@ -7,12 +7,14 @@ or you can be the CodeBreaker which means the computer creates the code and you 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------#
 If you want to use pyinstaller to create a .exe file you need to use the lines of code below to the beginning of every file.
 
+```
 def resource(relative_path):
-    base_path = getattr(
+   base_path = getattr(
         sys,
         '_MEIPASS',
         os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
-    
+```
 also change the "file path" e.g images, GIFs,  to the line below.
+```
 resource("file_path")
