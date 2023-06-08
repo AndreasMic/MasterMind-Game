@@ -1,0 +1,2 @@
+These two files contains the knuth algorith and the AI window but this time the algorithm works directly with the colors and it doesn't covnert them to the corresponding numbers.
+This algorithm may be slower to get the final result in difficult combinations and more colors.
