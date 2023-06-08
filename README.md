@@ -8,8 +8,12 @@ or you can be the CodeBreaker which means the computer creates the code and you 
 If you want to use pyinstaller to create a .exe file you need to use the lines of code below to the beginning of every file.
 
 ```
+import sys, os
+```
+
+```
 def resource(relative_path):
-   base_path = getattr(
+    base_path = getattr(
         sys,
         '_MEIPASS',
         os.path.dirname(os.path.abspath(__file__)))
