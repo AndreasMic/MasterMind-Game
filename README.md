@@ -4,7 +4,7 @@ You can either be the CodeMaker which means that you create the combination and 
 or you can be the CodeBreaker which means the computer creates the code and you try to solve it.
 
 
-#--------------------------------------------------------------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------#
 If you want to use pyinstaller to create a .exe file you need to use the lines of code below to the beginning of every file.
 
 def resource(relative_path):
