@@ -89,7 +89,8 @@ class AI(Toplevel):
             else:
                 winner = Winner()
                 winner.after(4000, lambda: winner.destroy())
-                
+        else:
+            return       
             
         counter += 1
         self.after(1000, lambda: self.create_rows(

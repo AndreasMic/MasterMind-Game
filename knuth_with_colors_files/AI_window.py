@@ -84,11 +84,13 @@ class AI(Toplevel):
                 label.grid(row=self.row+1, column=i, pady=10)
 
             if status == 1:                
-                winner = Winner()
-                winner.after(4000, lambda: winner.destroy())
-            else:
                 loser = Loser()
                 loser.after(4000, lambda: loser.destroy())
+            else:
+                winner = Winner()
+                winner.after(4000, lambda: winner.destroy())
+        else:
+            return       
             
         counter += 1
         self.after(1000, lambda: self.create_rows(
